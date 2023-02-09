@@ -1,0 +1,9 @@
+﻿1- O usuário poderá cadastrar uma nova conta escolhendo seu tipo e colocar o valor da conta e a data de vencimento;
+
+2 - Terá uma tela de Consulta de contas onde será listado as contas a vencer, vencidas e ainda não vencidas, possuindo um filtro para melhor visualização das mesmas;
+
+3- Ao pagar uma conta, a mesma será liquidada e haverá uma tela com o histórico de contas, nessa tela haverá um filtro de nome, data e tipo caso queira encontrar alguma conta específica
+
+4- Ao acessar o programa o mesmo perguntará ao usuário qual o salário líquido recebido, para assim fazer o cálculo de soma das contas e verificará se o usuário ficará em Déficit ou Superávit
+
+5- Será possível adicionar um comprovante de pagamento da conta ao clicar no botão de pagar, assim ao usuário consultar a conta paga poderá acessar a foto

@@ -1,0 +1,89 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETStandard,Version=v2.1": {
+      "ControleDeContas/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/ControleDeContas.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ControleDeContas.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ControleDeContas/1.0.0": {
+      "type": "project",
+      "path": "../ControleDeContas/ControleDeContas.csproj",
+      "msbuildProject": "../ControleDeContas/ControleDeContas.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETStandard,Version=v2.1": [
+      "ControleDeContas >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\felli\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\felli\\source\\repos\\PROJETOS\\ControleDeContas\\ControleContasLib\\ControleContasLib.csproj",
+      "projectName": "ControleContasLib",
+      "projectPath": "C:\\Users\\felli\\source\\repos\\PROJETOS\\ControleDeContas\\ControleContasLib\\ControleContasLib.csproj",
+      "packagesPath": "C:\\Users\\felli\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\felli\\source\\repos\\PROJETOS\\ControleDeContas\\ControleContasLib\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\felli\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "netstandard2.1"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "projectReferences": {
+            "C:\\Users\\felli\\source\\repos\\PROJETOS\\ControleDeContas\\ControleDeContas\\ControleDeContas.csproj": {
+              "projectPath": "C:\\Users\\felli\\source\\repos\\PROJETOS\\ControleDeContas\\ControleDeContas\\ControleDeContas.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netstandard2.1": {
+        "targetAlias": "netstandard2.1",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "NETStandard.Library": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.416\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
