@@ -291,6 +291,8 @@ namespace ControleDeContas {
             
             private global::System.Data.DataColumn columnDTPAGCONTA;
             
+            private global::System.Data.DataColumn columnVALORCONTA;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public CONTASDataTable() {
@@ -374,6 +376,14 @@ namespace ControleDeContas {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn VALORCONTAColumn {
+                get {
+                    return this.columnVALORCONTA;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -409,7 +419,7 @@ namespace ControleDeContas {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public CONTASRow AddCONTASRow(string NOMECONTA, string DESCRICAOCONTA, System.DateTime DTVALCONTA, byte TIPOCONTA, byte STATUSCONTA, System.DateTime DTPAGCONTA) {
+            public CONTASRow AddCONTASRow(string NOMECONTA, string DESCRICAOCONTA, System.DateTime DTVALCONTA, byte TIPOCONTA, byte STATUSCONTA, System.DateTime DTPAGCONTA, string VALORCONTA) {
                 CONTASRow rowCONTASRow = ((CONTASRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         NOMECONTA,
@@ -417,7 +427,8 @@ namespace ControleDeContas {
                         DTVALCONTA,
                         TIPOCONTA,
                         STATUSCONTA,
-                        DTPAGCONTA};
+                        DTPAGCONTA,
+                        VALORCONTA};
                 rowCONTASRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowCONTASRow);
                 return rowCONTASRow;
@@ -446,6 +457,7 @@ namespace ControleDeContas {
                 this.columnTIPOCONTA = base.Columns["TIPOCONTA"];
                 this.columnSTATUSCONTA = base.Columns["STATUSCONTA"];
                 this.columnDTPAGCONTA = base.Columns["DTPAGCONTA"];
+                this.columnVALORCONTA = base.Columns["VALORCONTA"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -463,6 +475,8 @@ namespace ControleDeContas {
                 base.Columns.Add(this.columnSTATUSCONTA);
                 this.columnDTPAGCONTA = new global::System.Data.DataColumn("DTPAGCONTA", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnDTPAGCONTA);
+                this.columnVALORCONTA = new global::System.Data.DataColumn("VALORCONTA", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnVALORCONTA);
                 this.columnNOMECONTA.AllowDBNull = false;
                 this.columnNOMECONTA.MaxLength = 50;
                 this.columnDESCRICAOCONTA.AllowDBNull = false;
@@ -675,6 +689,34 @@ namespace ControleDeContas {
                 set {
                     this[this.tableCONTAS.DTPAGCONTAColumn] = value;
                 }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string VALORCONTA {
+                get {
+                    try {
+                        return ((string)(this[this.tableCONTAS.VALORCONTAColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'VALORCONTA\' in table \'CONTAS\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableCONTAS.VALORCONTAColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsVALORCONTANull() {
+                return this.IsNull(this.tableCONTAS.VALORCONTAColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetVALORCONTANull() {
+                this[this.tableCONTAS.VALORCONTAColumn] = global::System.Convert.DBNull;
             }
         }
         

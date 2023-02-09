@@ -36,7 +36,7 @@
   <xs:element name="BancoDeDadosDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="BancoDeDadosDataSet" msprop:Generator_UserDSName="BancoDeDadosDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="CONTAS" msprop:Generator_TableClassName="CONTASDataTable" msprop:Generator_TableVarName="tableCONTAS" msprop:Generator_TablePropName="CONTAS" msprop:Generator_RowDeletingName="CONTASRowDeleting" msprop:Generator_RowChangingName="CONTASRowChanging" msprop:Generator_RowEvHandlerName="CONTASRowChangeEventHandler" msprop:Generator_RowDeletedName="CONTASRowDeleted" msprop:Generator_UserTableName="CONTAS" msprop:Generator_RowChangedName="CONTASRowChanged" msprop:Generator_RowEvArgName="CONTASRowChangeEvent" msprop:Generator_RowClassName="CONTASRow">
+        <xs:element name="CONTAS" msprop:Generator_TableClassName="CONTASDataTable" msprop:Generator_TableVarName="tableCONTAS" msprop:Generator_RowChangedName="CONTASRowChanged" msprop:Generator_TablePropName="CONTAS" msprop:Generator_RowDeletingName="CONTASRowDeleting" msprop:Generator_RowChangingName="CONTASRowChanging" msprop:Generator_RowEvHandlerName="CONTASRowChangeEventHandler" msprop:Generator_RowDeletedName="CONTASRowDeleted" msprop:Generator_RowClassName="CONTASRow" msprop:Generator_UserTableName="CONTAS" msprop:Generator_RowEvArgName="CONTASRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="NOMECONTA" msprop:Generator_ColumnVarNameInTable="columnNOMECONTA" msprop:Generator_ColumnPropNameInRow="NOMECONTA" msprop:Generator_ColumnPropNameInTable="NOMECONTAColumn" msprop:Generator_UserColumnName="NOMECONTA">
@@ -57,6 +57,7 @@
               <xs:element name="TIPOCONTA" msprop:Generator_ColumnVarNameInTable="columnTIPOCONTA" msprop:Generator_ColumnPropNameInRow="TIPOCONTA" msprop:Generator_ColumnPropNameInTable="TIPOCONTAColumn" msprop:Generator_UserColumnName="TIPOCONTA" type="xs:unsignedByte" />
               <xs:element name="STATUSCONTA" msprop:Generator_ColumnVarNameInTable="columnSTATUSCONTA" msprop:Generator_ColumnPropNameInRow="STATUSCONTA" msprop:Generator_ColumnPropNameInTable="STATUSCONTAColumn" msprop:Generator_UserColumnName="STATUSCONTA" type="xs:unsignedByte" />
               <xs:element name="DTPAGCONTA" msprop:Generator_ColumnVarNameInTable="columnDTPAGCONTA" msprop:Generator_ColumnPropNameInRow="DTPAGCONTA" msprop:Generator_ColumnPropNameInTable="DTPAGCONTAColumn" msprop:Generator_UserColumnName="DTPAGCONTA" type="xs:dateTime" />
+              <xs:element name="VALORCONTA" msprop:Generator_ColumnVarNameInTable="columnVALORCONTA" msprop:Generator_ColumnPropNameInRow="VALORCONTA" msprop:Generator_ColumnPropNameInTable="VALORCONTAColumn" msprop:Generator_UserColumnName="VALORCONTA" type="xs:string" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>

@@ -16,7 +16,6 @@ C:\Users\felli\source\repos\BillsController\ControleDeContas\ControleDeContas\bi
 C:\Users\felli\source\repos\BillsController\ControleDeContas\ControleDeContas\bin\Debug\ControleDeContas.exe.config
 C:\Users\felli\source\repos\BillsController\ControleDeContas\ControleDeContas\bin\Debug\ControleDeContas.exe
 C:\Users\felli\source\repos\BillsController\ControleDeContas\ControleDeContas\bin\Debug\ControleDeContas.pdb
-C:\Users\felli\source\repos\BillsController\ControleDeContas\ControleDeContas\obj\Debug\ControleDeContas.csproj.AssemblyReference.cache
 C:\Users\felli\source\repos\BillsController\ControleDeContas\ControleDeContas\obj\Debug\ControleDeContas.Form1.resources
 C:\Users\felli\source\repos\BillsController\ControleDeContas\ControleDeContas\obj\Debug\ControleDeContas.Properties.Resources.resources
 C:\Users\felli\source\repos\BillsController\ControleDeContas\ControleDeContas\obj\Debug\ControleDeContas.Telas.frmWelcome.resources

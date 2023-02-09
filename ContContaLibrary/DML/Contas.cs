@@ -8,6 +8,7 @@ namespace ContContaLibrary.DML
         public long IdConta { get; set; }
         public String NomeConta { get; set; }
         public String DescricaoConta { get; set; }
+        public Double ValorConta { get; set; }
         public DateTime DtValConta { get; set; }
         public DateTime DtPagConta{ get; set; }
         public TipoConta TipoConta { get; set; }

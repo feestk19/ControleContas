@@ -1,0 +1,4 @@
+C:\Users\felli\source\repos\BillsController\ControleDeContas\ContContaLibrary\obj\Debug\ContContaLibrary.csproj.AssemblyReference.cache
+C:\Users\felli\source\repos\BillsController\ControleDeContas\ContContaLibrary\obj\Debug\ContContaLibrary.Properties.Resources.resources
+C:\Users\felli\source\repos\BillsController\ControleDeContas\ContContaLibrary\obj\Debug\ContContaLibrary.csproj.GenerateResource.cache
+C:\Users\felli\source\repos\BillsController\ControleDeContas\ContContaLibrary\obj\Debug\ContContaLibrary.csproj.CoreCompileInputs.cache

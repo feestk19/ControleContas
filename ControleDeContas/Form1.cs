@@ -25,5 +25,14 @@ namespace ControleDeContas
             fw.ShowDialog();
             this.Show();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'controleContasBD.CONTAS' table. You can move, or remove it, as needed.
+            this.cONTASTableAdapter.Fill(this.controleContasBD.CONTAS);
+            // TODO: This line of code loads data into the 'bancoDeDadosDataSet.CONTAS' table. You can move, or remove it, as needed.
+            this.cONTASTableAdapter.Fill(this.controleContasBD.CONTAS);
+
+        }
     }
 }

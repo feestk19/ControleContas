@@ -61,6 +61,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BancoDeDadosDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BancoDeDadosDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ControleContasBD.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ControleContasBD.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Entities\Enums\StatusConta.cs" />
     <Compile Include="Entities\Enums\TipoConta.cs" />
     <Compile Include="Form1.cs">
@@ -92,6 +102,28 @@
     <EmbeddedResource Include="Telas\frmWelcome.resx">
       <DependentUpon>frmWelcome.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="BancoDeDadosDataSet.xsc">
+      <DependentUpon>BancoDeDadosDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BancoDeDadosDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BancoDeDadosDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BancoDeDadosDataSet.xss">
+      <DependentUpon>BancoDeDadosDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ControleContasBD.xsc">
+      <DependentUpon>ControleContasBD.xsd</DependentUpon>
+    </None>
+    <None Include="ControleContasBD.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ControleContasBD.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ControleContasBD.xss">
+      <DependentUpon>ControleContasBD.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
