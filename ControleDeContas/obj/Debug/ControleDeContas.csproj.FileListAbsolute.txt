@@ -11,3 +11,16 @@ C:\Users\felli\source\repos\PROJETOS\ControleDeContas\ControleDeContas\obj\Debug
 C:\Users\felli\source\repos\PROJETOS\ControleDeContas\ControleDeContas\obj\Debug\ControleDeContas.pdb
 C:\Users\felli\source\repos\PROJETOS\ControleDeContas\ControleDeContas\obj\Debug\ControleDeContas.Form1.resources
 C:\Users\felli\source\repos\PROJETOS\ControleDeContas\ControleDeContas\obj\Debug\ControleDeContas.Telas.frmWelcome.resources
+C:\Users\felli\source\repos\BillsController\ControleDeContas\ControleDeContas\bin\Debug\Database\BancoDeDados.mdf
+C:\Users\felli\source\repos\BillsController\ControleDeContas\ControleDeContas\bin\Debug\Database\BancoDeDados_log.ldf
+C:\Users\felli\source\repos\BillsController\ControleDeContas\ControleDeContas\bin\Debug\ControleDeContas.exe.config
+C:\Users\felli\source\repos\BillsController\ControleDeContas\ControleDeContas\bin\Debug\ControleDeContas.exe
+C:\Users\felli\source\repos\BillsController\ControleDeContas\ControleDeContas\bin\Debug\ControleDeContas.pdb
+C:\Users\felli\source\repos\BillsController\ControleDeContas\ControleDeContas\obj\Debug\ControleDeContas.csproj.AssemblyReference.cache
+C:\Users\felli\source\repos\BillsController\ControleDeContas\ControleDeContas\obj\Debug\ControleDeContas.Form1.resources
+C:\Users\felli\source\repos\BillsController\ControleDeContas\ControleDeContas\obj\Debug\ControleDeContas.Properties.Resources.resources
+C:\Users\felli\source\repos\BillsController\ControleDeContas\ControleDeContas\obj\Debug\ControleDeContas.Telas.frmWelcome.resources
+C:\Users\felli\source\repos\BillsController\ControleDeContas\ControleDeContas\obj\Debug\ControleDeContas.csproj.GenerateResource.cache
+C:\Users\felli\source\repos\BillsController\ControleDeContas\ControleDeContas\obj\Debug\ControleDeContas.csproj.CoreCompileInputs.cache
+C:\Users\felli\source\repos\BillsController\ControleDeContas\ControleDeContas\obj\Debug\ControleDeContas.exe
+C:\Users\felli\source\repos\BillsController\ControleDeContas\ControleDeContas\obj\Debug\ControleDeContas.pdb

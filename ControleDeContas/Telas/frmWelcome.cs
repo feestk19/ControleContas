@@ -25,7 +25,7 @@ namespace ControleDeContas.Telas
             for (int i = 1; i < 101; i++)
             {
                 prgCarregamento.Value = i;
-                Thread.Sleep(40);
+                Thread.Sleep(20);
             }
 
             prgCarregamento.Value = 99;
