@@ -7,3 +7,9 @@
 4- Ao acessar o programa o mesmo perguntará ao usuário qual o salário líquido recebido, para assim fazer o cálculo de soma das contas e verificará se o usuário ficará em Déficit ou Superávit
 
 5- Será possível adicionar um comprovante de pagamento da conta ao clicar no botão de pagar, assim ao usuário consultar a conta paga poderá acessar a foto
+
+6- CASE WHEN PPTPOPER = 0 THEN 'Proposta Nova'
+WHEN PPTPOPER = 1 THEN 'Proposta de Refinanciamento'
+WHEN PPTPOPER = 2 THEN 'Proposta de Renegociação'
+WHEN PPTPOPER = 5 THEN 'Proposta Cartão'
+WHEN PPTPOPER = 9 THEN 'Proposta de Portabilidade'

@@ -48,6 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DAL\Conexao.cs" />
+    <Compile Include="DAL\Contas\DaoContas.cs" />
     <Compile Include="DML\Contas.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -77,6 +78,12 @@
       <Project>{6303fe14-5183-4648-bea7-c133e587e494}</Project>
       <Name>ControleDeContas</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DAL\Contas\Altera_Contas.sql" />
+    <Content Include="DAL\Contas\Consulta_Contas.sql" />
+    <Content Include="DAL\Contas\Deleta_Contas.sql" />
+    <Content Include="DAL\Contas\Adiciona_Contas.sql" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

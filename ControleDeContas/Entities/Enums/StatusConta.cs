@@ -4,6 +4,6 @@
     {
         Pendente = 1,
         Liquidado = 2,
-        Atraso = 3
+        Vencido = 3
     }
 }

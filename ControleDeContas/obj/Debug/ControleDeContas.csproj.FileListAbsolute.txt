@@ -23,3 +23,4 @@ C:\Users\felli\source\repos\BillsController\ControleDeContas\ControleDeContas\ob
 C:\Users\felli\source\repos\BillsController\ControleDeContas\ControleDeContas\obj\Debug\ControleDeContas.csproj.CoreCompileInputs.cache
 C:\Users\felli\source\repos\BillsController\ControleDeContas\ControleDeContas\obj\Debug\ControleDeContas.exe
 C:\Users\felli\source\repos\BillsController\ControleDeContas\ControleDeContas\obj\Debug\ControleDeContas.pdb
+C:\Users\felli\source\repos\BillsController\ControleDeContas\ControleDeContas\obj\Debug\ControleDeContas.csproj.AssemblyReference.cache
