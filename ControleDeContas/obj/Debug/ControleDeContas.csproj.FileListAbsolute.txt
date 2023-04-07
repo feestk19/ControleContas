@@ -24,3 +24,14 @@ C:\Users\felli\source\repos\BillsController\ControleDeContas\ControleDeContas\ob
 C:\Users\felli\source\repos\BillsController\ControleDeContas\ControleDeContas\obj\Debug\ControleDeContas.exe
 C:\Users\felli\source\repos\BillsController\ControleDeContas\ControleDeContas\obj\Debug\ControleDeContas.pdb
 C:\Users\felli\source\repos\BillsController\ControleDeContas\ControleDeContas\obj\Debug\ControleDeContas.csproj.AssemblyReference.cache
+C:\repos\ControleContas\ControleDeContas\bin\Debug\ControleDeContas.exe.config
+C:\repos\ControleContas\ControleDeContas\bin\Debug\ControleDeContas.exe
+C:\repos\ControleContas\ControleDeContas\bin\Debug\ControleDeContas.pdb
+C:\repos\ControleContas\ControleDeContas\obj\Debug\ControleDeContas.csproj.AssemblyReference.cache
+C:\repos\ControleContas\ControleDeContas\obj\Debug\ControleDeContas.Form1.resources
+C:\repos\ControleContas\ControleDeContas\obj\Debug\ControleDeContas.Properties.Resources.resources
+C:\repos\ControleContas\ControleDeContas\obj\Debug\ControleDeContas.Telas.frmWelcome.resources
+C:\repos\ControleContas\ControleDeContas\obj\Debug\ControleDeContas.csproj.GenerateResource.cache
+C:\repos\ControleContas\ControleDeContas\obj\Debug\ControleDeContas.csproj.CoreCompileInputs.cache
+C:\repos\ControleContas\ControleDeContas\obj\Debug\ControleDeContas.exe
+C:\repos\ControleContas\ControleDeContas\obj\Debug\ControleDeContas.pdb
