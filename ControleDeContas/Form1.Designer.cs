@@ -30,21 +30,11 @@ namespace ControleDeContas
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.gridPrincipal = new System.Windows.Forms.DataGridView();
-            this.nOMECONTADataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dESCRICAOCONTADataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.vALORCONTADataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tIPOCONTADataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dTVALCONTADataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dTPAGCONTADataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.sTATUSCONTADataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cONTASBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            //this.controleContasBD = new ControleDeContas.ControleContasBD();
-            //this.cONTASTableAdapter = new ControleDeContas.ControleContasBDTableAdapters.CONTASTableAdapter();
             this.btnAdicionar = new System.Windows.Forms.Button();
             this.btnAlterar = new System.Windows.Forms.Button();
             this.btnConsultar = new System.Windows.Forms.Button();
@@ -62,10 +52,7 @@ namespace ControleDeContas
             this.cmbTipoConta = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.gridPrincipal)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cONTASBindingSource)).BeginInit();
-            //((System.ComponentModel.ISupportInitialize)(this.controleContasBD)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -80,114 +67,43 @@ namespace ControleDeContas
             // 
             // gridPrincipal
             // 
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.Format = "d";
-            dataGridViewCellStyle4.NullValue = "Sem dados";
-            this.gridPrincipal.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
-            this.gridPrincipal.AutoGenerateColumns = false;
+            this.gridPrincipal.AllowUserToAddRows = false;
+            this.gridPrincipal.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.Format = "d";
+            dataGridViewCellStyle1.NullValue = "Sem dados";
+            this.gridPrincipal.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.gridPrincipal.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.gridPrincipal.BackgroundColor = System.Drawing.Color.LightSlateGray;
             this.gridPrincipal.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.gridPrincipal.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Sunken;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.MediumSpringGreen;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle5.NullValue = "Sem dados";
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridPrincipal.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.MediumSpringGreen;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.NullValue = "Sem dados";
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridPrincipal.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.gridPrincipal.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gridPrincipal.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.nOMECONTADataGridViewTextBoxColumn,
-            this.dESCRICAOCONTADataGridViewTextBoxColumn,
-            this.vALORCONTADataGridViewTextBoxColumn,
-            this.tIPOCONTADataGridViewTextBoxColumn,
-            this.dTVALCONTADataGridViewTextBoxColumn,
-            this.dTPAGCONTADataGridViewTextBoxColumn,
-            this.sTATUSCONTADataGridViewTextBoxColumn});
-            this.gridPrincipal.DataSource = this.cONTASBindingSource;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.Gainsboro;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle6.Format = "d";
-            dataGridViewCellStyle6.NullValue = null;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.DodgerBlue;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gridPrincipal.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.Gainsboro;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.Format = "d";
+            dataGridViewCellStyle3.NullValue = null;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gridPrincipal.DefaultCellStyle = dataGridViewCellStyle3;
             this.gridPrincipal.Location = new System.Drawing.Point(43, 240);
             this.gridPrincipal.Name = "gridPrincipal";
             this.gridPrincipal.ReadOnly = true;
             this.gridPrincipal.Size = new System.Drawing.Size(1068, 457);
             this.gridPrincipal.TabIndex = 1;
-            // 
-            // nOMECONTADataGridViewTextBoxColumn
-            // 
-            this.nOMECONTADataGridViewTextBoxColumn.DataPropertyName = "NOMECONTA";
-            this.nOMECONTADataGridViewTextBoxColumn.HeaderText = "NOME DA CONTA";
-            this.nOMECONTADataGridViewTextBoxColumn.Name = "nOMECONTADataGridViewTextBoxColumn";
-            this.nOMECONTADataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // dESCRICAOCONTADataGridViewTextBoxColumn
-            // 
-            this.dESCRICAOCONTADataGridViewTextBoxColumn.DataPropertyName = "DESCRICAOCONTA";
-            this.dESCRICAOCONTADataGridViewTextBoxColumn.HeaderText = "DESCRIÇÃO";
-            this.dESCRICAOCONTADataGridViewTextBoxColumn.Name = "dESCRICAOCONTADataGridViewTextBoxColumn";
-            this.dESCRICAOCONTADataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // vALORCONTADataGridViewTextBoxColumn
-            // 
-            this.vALORCONTADataGridViewTextBoxColumn.DataPropertyName = "VALORCONTA";
-            this.vALORCONTADataGridViewTextBoxColumn.HeaderText = "VALOR";
-            this.vALORCONTADataGridViewTextBoxColumn.Name = "vALORCONTADataGridViewTextBoxColumn";
-            this.vALORCONTADataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // tIPOCONTADataGridViewTextBoxColumn
-            // 
-            this.tIPOCONTADataGridViewTextBoxColumn.DataPropertyName = "TIPOCONTA";
-            this.tIPOCONTADataGridViewTextBoxColumn.HeaderText = "TIPO DA CONTA";
-            this.tIPOCONTADataGridViewTextBoxColumn.Name = "tIPOCONTADataGridViewTextBoxColumn";
-            this.tIPOCONTADataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // dTVALCONTADataGridViewTextBoxColumn
-            // 
-            this.dTVALCONTADataGridViewTextBoxColumn.DataPropertyName = "DTVALCONTA";
-            this.dTVALCONTADataGridViewTextBoxColumn.HeaderText = "DATA DE VENCIMENTO";
-            this.dTVALCONTADataGridViewTextBoxColumn.Name = "dTVALCONTADataGridViewTextBoxColumn";
-            this.dTVALCONTADataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // dTPAGCONTADataGridViewTextBoxColumn
-            // 
-            this.dTPAGCONTADataGridViewTextBoxColumn.DataPropertyName = "DTPAGCONTA";
-            this.dTPAGCONTADataGridViewTextBoxColumn.HeaderText = "DATA DO PAGAMENTO";
-            this.dTPAGCONTADataGridViewTextBoxColumn.Name = "dTPAGCONTADataGridViewTextBoxColumn";
-            this.dTPAGCONTADataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // sTATUSCONTADataGridViewTextBoxColumn
-            // 
-            this.sTATUSCONTADataGridViewTextBoxColumn.DataPropertyName = "STATUSCONTA";
-            this.sTATUSCONTADataGridViewTextBoxColumn.HeaderText = "STATUS";
-            this.sTATUSCONTADataGridViewTextBoxColumn.Name = "sTATUSCONTADataGridViewTextBoxColumn";
-            this.sTATUSCONTADataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // cONTASBindingSource
-            // 
-            this.cONTASBindingSource.DataMember = "CONTAS";
-            //this.cONTASBindingSource.DataSource = this.controleContasBD;
-            // 
-            // controleContasBD
-            // 
-            //this.controleContasBD.DataSetName = "ControleContasBD";
-            //this.controleContasBD.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // cONTASTableAdapter
-            // 
-            //this.cONTASTableAdapter.ClearBeforeFill = true;
             // 
             // btnAdicionar
             // 
@@ -356,8 +272,6 @@ namespace ControleDeContas
             // 
             // cmbTipoConta
             // 
-            this.cmbTipoConta.DataSource = this.cONTASBindingSource;
-            this.cmbTipoConta.DisplayMember = "TIPOCONTA";
             this.cmbTipoConta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cmbTipoConta.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbTipoConta.FormattingEnabled = true;
@@ -387,23 +301,12 @@ namespace ControleDeContas
             this.label6.TabIndex = 17;
             this.label6.Text = "Quarta-feira, 31 de dezembro de 9999 - 00:00:00";
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(964, 69);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 18;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightBlue;
             this.ClientSize = new System.Drawing.Size(1154, 891);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.cmbTipoConta);
@@ -431,10 +334,8 @@ namespace ControleDeContas
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Controle de Contas";
             this.Load += new System.EventHandler(this.Form1_Load);
-            this.Shown += new System.EventHandler(this.Form1_Shown);
+            //this.Shown += new System.EventHandler(this.Form1_Shown);
             ((System.ComponentModel.ISupportInitialize)(this.gridPrincipal)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cONTASBindingSource)).EndInit();
-            //((System.ComponentModel.ISupportInitialize)(this.controleContasBD)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -444,8 +345,6 @@ namespace ControleDeContas
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView gridPrincipal;
-        //private ControleContasBD controleContasBD;
-        private System.Windows.Forms.BindingSource cONTASBindingSource;
         //private ControleContasBDTableAdapters.CONTASTableAdapter cONTASTableAdapter;
         private System.Windows.Forms.Button btnAdicionar;
         private System.Windows.Forms.Button btnAlterar;
@@ -453,13 +352,13 @@ namespace ControleDeContas
         private System.Windows.Forms.Button btnExcluir;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lblTotal;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nOMECONTADataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dESCRICAOCONTADataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn vALORCONTADataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn tIPOCONTADataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dTVALCONTADataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dTPAGCONTADataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn sTATUSCONTADataGridViewTextBoxColumn;
+        //private System.Windows.Forms.DataGridViewTextBoxColumn nOMECONTADataGridViewTextBoxColumn;
+        //private System.Windows.Forms.DataGridViewTextBoxColumn dESCRICAOCONTADataGridViewTextBoxColumn;
+        //private System.Windows.Forms.DataGridViewTextBoxColumn vALORCONTADataGridViewTextBoxColumn;
+        //private System.Windows.Forms.DataGridViewTextBoxColumn tIPOCONTADataGridViewTextBoxColumn;
+        //private System.Windows.Forms.DataGridViewTextBoxColumn dTVALCONTADataGridViewTextBoxColumn;
+        //private System.Windows.Forms.DataGridViewTextBoxColumn dTPAGCONTADataGridViewTextBoxColumn;
+        //private System.Windows.Forms.DataGridViewTextBoxColumn sTATUSCONTADataGridViewTextBoxColumn;
         private System.Windows.Forms.Timer tmHora;
         private System.Windows.Forms.RadioButton rdbAlfabetica;
         private System.Windows.Forms.RadioButton rdbValor;
@@ -471,7 +370,6 @@ namespace ControleDeContas
         private System.Windows.Forms.ComboBox cmbTipoConta;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Button button1;
     }
 }
 

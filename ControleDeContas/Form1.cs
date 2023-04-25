@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using ControleDeContas.Telas;
 using ControleDeContas.Database;
+using System.Globalization;
 
 namespace ControleDeContas
 {
@@ -20,50 +21,101 @@ namespace ControleDeContas
             InitializeComponent();
         }
 
-        private void Form1_Shown(object sender, EventArgs e)
-        {
-            this.Hide();
-            frmWelcome fw = new frmWelcome();
-            fw.ShowDialog();
-            this.Show();
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            // TODO: This line of code loads data into the 'controleContasBD.CONTAS' table. You can move, or remove it, as needed.
-            //this.cONTASTableAdapter.Fill(this.controleContasBD.CONTAS);
-            // TODO: This line of code loads data into the 'bancoDeDadosDataSet.CONTAS' table. You can move, or remove it, as needed.
-           // this.cONTASTableAdapter.Fill(this.controleContasBD.CONTAS);
-
-        }
-
-        //private void CarregarDadosBanco(Object o, EventArgs e)
+        //private void Form1_Shown(object sender, EventArgs e)
         //{
-        //    try
-        //    {
-        //        using (SqlConnection cn = new SqlConnection())
-        //    }
-        //    catch (Exception)
-        //    {
-
-        //        throw;
-        //    }
+        //    this.Hide();
+        //    frmWelcome fw = new frmWelcome();
+        //    fw.ShowDialog();
+        //    this.Show();
         //}
 
-        private void button1_Click(object sender, EventArgs e)
+        Conexao con = new Conexao();
+
+        // -- Configura DataGridView -- \\
+        public void configuraDataGridView()
         {
+            //Renomeia as colunas do DataGridView
+            gridPrincipal.Columns[0].HeaderText = "Código";
+            gridPrincipal.Columns[1].HeaderText = "Nome da Conta";
+            gridPrincipal.Columns[2].HeaderText = "Descrição";
+            gridPrincipal.Columns[3].HeaderText = "Valor";
+            gridPrincipal.Columns[4].HeaderText = "Data de Vencimento";
+            gridPrincipal.Columns[5].HeaderText = "Data de Pagamento";
+            gridPrincipal.Columns[6].HeaderText = "Tipo da Conta";
+            gridPrincipal.Columns[7].HeaderText = "Status";
+
+            
+            
+        }
+
+        // -- Atualiza DataGridView -- \\
+        public void atualizaDataGridView(String instrucaoSQL)
+        {
+            SqlConnection conn = new SqlConnection(con.StringConexao());
+
             try
             {
-                using (SqlConnection cn = new SqlConnection(Conexao.StringConexao))
-                {
-                    cn.Open();
-                    MessageBox.Show("Conectado ao Banco de Dados com sucesso!!!");
-                }
+                conn.Open();
+                SqlCommand cmd = new SqlCommand(instrucaoSQL, conn);
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                DataSet ds = new DataSet();
+                da.Fill(ds);
+                gridPrincipal.DataSource = ds;
+                gridPrincipal.DataMember = ds.Tables[0].TableName;
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Falha ao tentar conectar\n\n" + ex.Message);
+                MessageBox.Show("Erro ao obter os dados! \n\n" + ex + ".", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                //throw;
             }
+            finally
+            {
+                conn.Close();
+            }
+
+            //for (int i = 0; i < gridPrincipal.Rows.Count; i++)
+            //{
+            //    String st = Convert.ToString(Convert.ToDouble(gridPrincipal.Rows[i].Cells["VALORCONTA"].Value.ToString()));
+            //}
         }
+
+        
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            SqlConnection cn = new SqlConnection(con.StringConexao());
+            try
+            {
+                cn.Open();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Falha de acesso ao banco de dados. \n\nDescrição do erro: \n\n " + ex + ". ");
+                return;
+                //throw;
+            }
+
+            //Define os comandos SQL
+            SqlCommand cmd = new SqlCommand("SELECT * FROM CONTAS ORDER BY IDCONTA ASC", cn);
+
+            //Faz a ponte entre o objeto DataSet e a fonte de dados - Cria um adapter para preencher um DataSet
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+
+            //Define um objeto DataSet que guardará na memória os dados obtidos da fonte de dados
+            DataSet ds = new DataSet();
+
+            //Estrutura da tabela do BD ou de outra fonte de dados
+            DataTable contas = new DataTable();
+
+            //Método do DataAdapter que Recupera os dados do DataSource usando a instrução SQL
+            da.Fill(contas);
+
+            //Obtém ou define a fonte de dados que será exibida no DataGridView
+            gridPrincipal.DataSource = contas;
+            atualizaDataGridView("EXEC SELECIONA_CONTAS_ALL_V1");
+            configuraDataGridView();
+        }
+
+
     }
 }
