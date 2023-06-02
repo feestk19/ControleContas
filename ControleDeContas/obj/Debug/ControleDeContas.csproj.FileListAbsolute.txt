@@ -35,3 +35,4 @@ C:\repos\ControleContas\ControleDeContas\obj\Debug\ControleDeContas.csproj.Gener
 C:\repos\ControleContas\ControleDeContas\obj\Debug\ControleDeContas.csproj.CoreCompileInputs.cache
 C:\repos\ControleContas\ControleDeContas\obj\Debug\ControleDeContas.exe
 C:\repos\ControleContas\ControleDeContas\obj\Debug\ControleDeContas.pdb
+C:\repos\ControleContas\ControleDeContas\obj\Debug\ControleDeContas.csproj.SuggestedBindingRedirects.cache

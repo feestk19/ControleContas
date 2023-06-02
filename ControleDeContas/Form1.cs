@@ -43,9 +43,6 @@ namespace ControleDeContas
             gridPrincipal.Columns[5].HeaderText = "Data de Pagamento";
             gridPrincipal.Columns[6].HeaderText = "Tipo da Conta";
             gridPrincipal.Columns[7].HeaderText = "Status";
-
-            
-            
         }
 
         // -- Atualiza DataGridView -- \\
@@ -72,14 +69,7 @@ namespace ControleDeContas
             {
                 conn.Close();
             }
-
-            //for (int i = 0; i < gridPrincipal.Rows.Count; i++)
-            //{
-            //    String st = Convert.ToString(Convert.ToDouble(gridPrincipal.Rows[i].Cells["VALORCONTA"].Value.ToString()));
-            //}
         }
-
-        
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -116,6 +106,9 @@ namespace ControleDeContas
             configuraDataGridView();
         }
 
-
+        private void configuraTimer(Object o, EventArgs e)
+        {
+            lblTimer.Text = DateTime.Now.ToString("F");
+        }
     }
 }

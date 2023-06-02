@@ -17,7 +17,7 @@ namespace ControleDeContas.Database
 
         public string StringConexao()
         {
-            return @"Data Source= FSTROMBECK; Integrated Security=False; Initial Catalog= ControleDeContas; User ID= sa; Password=123456";
+            return @"Data Source= DESKTOP-V0TGTUS; Integrated Security=False; Initial Catalog= ControleDeContas; User ID= sa; Password=123456";
 
             //Utilizando concatenação
             //get { return "Data Source=" + server + "; Integrated Security=False; Initial Catalog=" + dataBase + "; User ID=" + user + "; Password=" + password; }

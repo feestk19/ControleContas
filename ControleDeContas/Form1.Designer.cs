@@ -30,9 +30,9 @@ namespace ControleDeContas
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.gridPrincipal = new System.Windows.Forms.DataGridView();
             this.btnAdicionar = new System.Windows.Forms.Button();
@@ -51,7 +51,7 @@ namespace ControleDeContas
             this.label4 = new System.Windows.Forms.Label();
             this.cmbTipoConta = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.lblTimer = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.gridPrincipal)).BeginInit();
             this.SuspendLayout();
             // 
@@ -69,36 +69,36 @@ namespace ControleDeContas
             // 
             this.gridPrincipal.AllowUserToAddRows = false;
             this.gridPrincipal.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.Format = "d";
-            dataGridViewCellStyle1.NullValue = "Sem dados";
-            this.gridPrincipal.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle10.Format = "d";
+            dataGridViewCellStyle10.NullValue = "Sem dados";
+            this.gridPrincipal.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
             this.gridPrincipal.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.gridPrincipal.BackgroundColor = System.Drawing.Color.LightSlateGray;
             this.gridPrincipal.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.gridPrincipal.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Sunken;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.MediumSpringGreen;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.NullValue = "Sem dados";
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridPrincipal.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.MediumSpringGreen;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle11.NullValue = "Sem dados";
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridPrincipal.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
             this.gridPrincipal.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.Gainsboro;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.Format = "d";
-            dataGridViewCellStyle3.NullValue = null;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.DodgerBlue;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gridPrincipal.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.Gainsboro;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle12.Format = "d";
+            dataGridViewCellStyle12.NullValue = null;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gridPrincipal.DefaultCellStyle = dataGridViewCellStyle12;
             this.gridPrincipal.Location = new System.Drawing.Point(43, 240);
             this.gridPrincipal.Name = "gridPrincipal";
             this.gridPrincipal.ReadOnly = true;
@@ -193,6 +193,7 @@ namespace ControleDeContas
             // tmHora
             // 
             this.tmHora.Enabled = true;
+            this.tmHora.Tick += new System.EventHandler(this.configuraTimer);
             // 
             // rdbAlfabetica
             // 
@@ -291,15 +292,14 @@ namespace ControleDeContas
             this.label5.TabIndex = 16;
             this.label5.Text = "Tipo";
             // 
-            // label6
+            // lblTimer
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(715, 860);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(410, 22);
-            this.label6.TabIndex = 17;
-            this.label6.Text = "Quarta-feira, 31 de dezembro de 9999 - 00:00:00";
+            this.lblTimer.AutoSize = true;
+            this.lblTimer.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTimer.Location = new System.Drawing.Point(715, 860);
+            this.lblTimer.Name = "lblTimer";
+            this.lblTimer.Size = new System.Drawing.Size(0, 22);
+            this.lblTimer.TabIndex = 17;
             // 
             // Form1
             // 
@@ -307,7 +307,7 @@ namespace ControleDeContas
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightBlue;
             this.ClientSize = new System.Drawing.Size(1154, 891);
-            this.Controls.Add(this.label6);
+            this.Controls.Add(this.lblTimer);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.cmbTipoConta);
             this.Controls.Add(this.label4);
@@ -334,7 +334,6 @@ namespace ControleDeContas
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Controle de Contas";
             this.Load += new System.EventHandler(this.Form1_Load);
-            //this.Shown += new System.EventHandler(this.Form1_Shown);
             ((System.ComponentModel.ISupportInitialize)(this.gridPrincipal)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -369,7 +368,7 @@ namespace ControleDeContas
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ComboBox cmbTipoConta;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label lblTimer;
     }
 }
 
